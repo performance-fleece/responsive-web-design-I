@@ -155,7 +155,6 @@ h5 {
 
 .container {
   width: 876px;
-  margin: 0 30px;
 }
 
 @media (max-width: 500px) {
@@ -215,9 +214,6 @@ header nav a {
   border-bottom: 1px solid black;
   padding: 40px 0;
 }
-/* @media (max-width: 500px) {
-	.header-na
-} */
 
 .title-left {
   display: flex;
@@ -262,6 +258,7 @@ header nav a {
 @media (max-width: 500px) {
   .top-content {
     flex-flow: column wrap;
+    margin-top: 20px;
   }
 }
 .container .text-half {
@@ -275,8 +272,11 @@ header nav a {
   }
 
   .top-content img.middle-img {
+    margin: 20px 0;
+    display: flex;
     flex: 1;
     max-width: 500px;
+    min-width: 0px;
   }
 }
 .bottom-content {
@@ -323,6 +323,75 @@ footer {
   width: 100%;
 }
 
-/* @media( max-width: 500px ) {
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+	width: 100%;
+	/* margin: 5px 20px; */
+  }
+  header nav {
+    margin-top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 45px 0 30px;
+  }
 
-} */
+    header nav a {
+	font-size: 12pt;
+	justify-content: space-evenly;
+	
+  }
+
+
+    header nav a.logo {
+	order: -1;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	padding-left: 20px;
+	margin-bottom: 40px;
+	/* margin: 30px 0 38px 0; */
+	/* padding-left: 30px; */
+  }
+
+  .top-title {
+	  display: flex;
+	  	  width: 100%;
+
+	  margin-bottom: 15px
+	
+	  /* text-align: center; */
+  }
+
+  .top-title .title-left {
+	  padding: 35px 0 10px 15px;
+	  /* box-sizing: content-box; */
+	  width: 100%;
+  }
+
+  .top-title .title-left .title-button {
+	  padding-top: 20px;
+	  margin: 10px;
+  }
+  .top-title .title-right .top-img {
+    display: none;
+  }
+
+
+  }
+
+  /* .top-title {
+	  width: 100%;
+	  display: flex
+	  justify-content: center;
+  } */
+.main {
+	margin: 0 20px;
+}
+  .top-content .text-half {
+	  width: 44%;
+
+  }
+}
