@@ -152,3 +152,30 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+header nav {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 15pt;
+  color: grey;
+  border-bottom: 1px solid black;
+  padding: 20px 0;
+}
+
+header nav .logo {
+  order: -1;
+  padding: 19px 0;
+}
+
+
