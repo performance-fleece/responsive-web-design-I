@@ -162,7 +162,6 @@ header nav {
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  
 }
 
 header nav a {
@@ -187,67 +186,68 @@ header nav .logo {
 .title-left {
   display: flex;
   flex-flow: column nowrap;
-  }
-
-  .title-text {
-    text-align: center;
-    /* padding-top: 50px; */
-  }
-
-  .title-text h1 {
-    font-size: 54pt;
-  }
-
-  .title-button {
-    text-align: center;
-  }
-
-  button.index {
-        font-size: 12pt;
-    margin: 9px 0;
-    padding: 5px 42px;
-
-  }
-
-  .top-img img {
-    display: none;
-  }
-
-  .main {
-    margin: 0 4%;
-  }
-
-  .top-content {
-    display: flex;
-    flex-flow: column nowrap;
-    padding-top: 35px;
-  }
-  .text-half {
-    padding: 25px 0;
-  }
-  p {
-    line-height: 1.1;
-  }
-.bottom-content {
-  border-bottom: 2px solid black
 }
-  img.middle-img {
-    width: 100%;
-    padding-top: 30px;
-  }
 
-  .text-third {
-    padding: 34px 0;
-  }
+.title-text {
+  text-align: center;
+  /* padding-top: 50px; */
+}
 
-  .contact {
-    padding: 35px 4%;
-  }
+.title-text h1 {
+  font-size: 54pt;
+}
 
-  .contact p {
-    padding-bottom: 12px;
-  }
+.title-button {
+  text-align: center;
+}
 
-  footer p {
-  text-align: center;  
-  }
+button.index {
+  font-size: 12pt;
+  margin: 9px 0;
+  padding: 5px 42px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.top-img img {
+  display: none;
+}
+
+.main {
+  margin: 0 4%;
+}
+
+.top-content {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 35px;
+}
+.text-half {
+  padding: 25px 0;
+}
+p {
+  line-height: 1.1;
+}
+.bottom-content {
+  border-bottom: 2px solid black;
+}
+img.middle-img {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.text-third {
+  padding: 34px 0;
+}
+
+.contact {
+  padding: 35px 4%;
+}
+
+.contact p {
+  padding-bottom: 12px;
+}
+
+footer p {
+  text-align: center;
+}
