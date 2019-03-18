@@ -178,4 +178,76 @@ header nav .logo {
   padding: 19px 0;
 }
 
+.top-title {
+  padding: 50px 0 66px;
+  margin: 0 4%;
+  border-bottom: 2px solid black;
+}
 
+.title-left {
+  display: flex;
+  flex-flow: column nowrap;
+  }
+
+  .title-text {
+    text-align: center;
+    /* padding-top: 50px; */
+  }
+
+  .title-text h1 {
+    font-size: 54pt;
+  }
+
+  .title-button {
+    text-align: center;
+  }
+
+  button.index {
+        font-size: 12pt;
+    margin: 9px 0;
+    padding: 5px 42px;
+
+  }
+
+  .top-img img {
+    display: none;
+  }
+
+  .main {
+    margin: 0 4%;
+  }
+
+  .top-content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 35px;
+  }
+  .text-half {
+    padding: 25px 0;
+  }
+  p {
+    line-height: 1.1;
+  }
+.bottom-content {
+  border-bottom: 2px solid black
+}
+  img.middle-img {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .text-third {
+    padding: 34px 0;
+  }
+
+  .contact {
+    padding: 35px 4%;
+  }
+
+  .contact p {
+    padding-bottom: 12px;
+  }
+
+  footer p {
+  text-align: center;  
+  }
