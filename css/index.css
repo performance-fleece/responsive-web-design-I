@@ -324,3 +324,54 @@ footer p {
   }
 
 }
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 914px;
+    width: 100%;
+    margin-left: 55px;
+  }
+
+  header nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header nav .logo {
+    flex: 1;
+    order: 0;
+    padding: 0;
+  }
+
+  header nav a.links {
+    padding: 0;
+    align-items: center;
+  }
+
+  .top-title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end
+  }
+
+.title-left {
+  flex: 1;
+  justify-items: 
+}
+
+
+
+.title-right {
+  flex: 1;
+  
+}
+
+ .top-img img {
+   display: flex;
+   margin-left: auto;
+ }
+
+}
