@@ -204,10 +204,10 @@ header nav .logo {
   padding-top: 2.188em;
 }
 .main .top-content .text-half {
-  padding: 1.563em 0;
+  padding: 1.463em 0;
 }
 .main .top-content .text-half p {
-  line-height: 1.1;
+  line-height: 1.167em;
 }
 .main .top-content img.middle-img {
   width: 100%;
@@ -217,7 +217,7 @@ header nav .logo {
   border-bottom: 2px solid black;
 }
 .main .bottom-content .text-third {
-  padding: 1.9em 0 1.98em 0;
+  padding: 1.9em 0 2.2em 0;
 }
 .main .bottom-content .text-third p {
   line-height: 1.167em;
