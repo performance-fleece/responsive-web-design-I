@@ -1,0 +1,388 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+// Variables
+
+@desktop: ~"( max-width: 900px )";
+@tablet: ~"( max-width: 800px )";
+@mobile: ~"( max-width: 500px )";
+
+.container {
+  width: 100%;
+  max-width: 500px;
+
+  // @media @tablet {
+  //   max-width: 800px;
+  // }
+}
+
+// @media (min-width: 500px) {
+//   .container {
+//     width: 100%;
+//     max-width: 800px;
+//   }
+// }
+
+header {
+  nav {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-size: 1.25em;
+      color: grey;
+      border-bottom: 1px solid black;
+      padding: 1em 0;
+    }
+    .logo {
+      order: -1;
+      padding: .95em 0;
+    }
+  }
+}
+
+.top-title {
+  padding: 3.1em 0 4.2em;
+  margin: 0 1.3em;
+  border-bottom: 2px solid black;
+  .title-left {
+    display: flex;
+    flex-flow: column nowrap;
+    .title-text {
+      text-align: center;
+      h1 {
+        font-size: 4.5em;
+        margin-bottom: .23em;
+      }
+    }
+    .title-button {
+      text-align: center;
+      .index {
+        font-size: 12pt;
+        margin: 9px 0;
+        padding: 5px 42px;
+        background-color: white;
+        border: 1px solid black;
+      }
+    }
+  }
+  .title-right {
+    .top-img {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.main {
+  margin: 0 1.25em;
+}
+
+.main {
+  .top-content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 2.188em;
+    .text-half {
+      padding: 1.563em 0;
+      p {
+        line-height: 1.1;
+      }
+    }
+    img.middle-img {
+      width: 100%;
+      padding-top: 30px;
+    }
+  }
+  .bottom-content {
+    border-bottom: 2px solid black;
+    .text-third {
+      padding: 1.9em 0 1.98em 0;
+      p {
+        line-height: 1.167em;
+      }
+    }
+  }
+}
+
+.contact {
+  padding: 2.188em 1.25em 1.6em 1.25em;
+  .contact-text {
+    p {
+      padding-bottom: .95em;
+    }
+  }
+}
+
+footer {
+  p{
+    text-align: center;
+  }
+}
+
+
+
+// @media (min-width: 500px) {
+//   header nav {
+//     flex-flow: row wrap;
+//     align-items: flex-start;
+//     justify-content: space-between;
+//   }
+
+//   header nav .logo {
+//     width: 100%;
+//     padding-top: 30px;
+//   }
+
+//   header nav a {
+//     font-size: 12pt;
+//     border-bottom: none;
+
+//     padding: 0 0;
+//   }
+
+//   header nav a.links {
+//     flex: 1;
+//     padding-top: 19px;
+//   }
+
+//   header nav a.last {
+//     padding-right: 10px;
+//   }
+
+//   .top-title {
+//     padding: 74px 0 66px;
+//     margin: 0 1.1em;
+//   }
+
+//   .top-content {
+//     display: flex;
+//     align-items: flex-start;
+//     flex-flow: row wrap;
+//     /* justify-content: space-between; */
+//     flex-shrink: 1;
+//   }
+
+//   .text-half {
+//     justify-content: flex-end;
+//     flex: 1;
+//     padding: 0 1em 0 0.6em;
+//   }
+
+//   .main {
+//     margin: 0 1.2em;
+//   }
+//   img.middle-img {
+//     padding-top: 35px;
+//   }
+
+//   .bottom-content {
+//     display: flex;
+//     flex-flow: row wrap;
+//   }
+
+//   .text-third {
+//     flex: 1;
+//     padding: 2em 2em 2.5em 0.6em;
+//   }
+// }
+
+// @media (min-width: 800px) {
+//   .container {
+//     max-width: 914px;
+//     width: 100%;
+//     margin-left: 55px;
+//   }
+
+//   header nav {
+//     display: flex;
+//     flex-flow: row wrap;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   header nav .logo {
+//     flex: 1;
+//     order: 0;
+//     padding: 0;
+//   }
+
+//   header nav a.links {
+//     padding: 0;
+//     align-items: center;
+//   }
+
+//   .top-title {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     justify-content: space-between;
+//     align-items: flex-end;
+//   }
+
+//   .title-left {
+//     flex: 1;
+//   }
+
+//   .title-right {
+//     flex: 1;
+//   }
+
+//   .top-img img {
+//     display: flex;
+//     margin-left: auto;
+//   }
+// }
